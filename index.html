@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c07c68998d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Madhavan P</span></h1>
+                <p>This is my official Portfolio website to shows all 
+                    <br>Details like Skills, Education, Certifications and projects.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/img1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I'm an ambitious MCA student with strong skills
+                        in Python,Java JavaScript,HTMLand CSS, ready
+                        to deliver high-quality and dynamic web
+                        solutions.
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('knowledges')">Knowledge Acquisition</p>
+                        <p class="tab-links" onclick="opentab('academic')">Academic Excellence</p>
+                        <p class="tab-links" onclick="opentab('activities')">Co-Curricular Activities</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021-2023:</span><br>Master of Computer Applications <strong>(MCA)</strong>
+                                <br>Bishop Heber College, Trichy<br> CGPA-8.32
+                            </li>
+                            <li><span>2018-2021:</span><br>Bachelor of Computer Applications
+                                <strong>(BCA)</strong><br>Government Art's College, Chidambaram<br> CGPA-8.23
+                            </li>
+                            <li><span>2017-2018:</span><br>Higher Secondary School <strong>(HSC)</strong><br>Rajiv
+                                Gandhi National Matric Higher Secondary School,
+                                Nattarmangalam<br> CGPA-7.86</li>
+                            <li><span>2015-2016:</span><br>Secondary School Leaving Certificate
+                                <strong>(SSLC)</strong><br>Rajiv Gandhi National High School, Nattarmangalam<br>
+                                CGPA-9.36
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>BackEnd:
+                                </span>
+                                <br>
+                                Java
+                                <br>
+                                Python
+                                <br>
+                                Spring Boot
+                            </li>
+                            <li> <span> Database:
+                                </span>
+                                <br>
+                                MySQL
+                            </li>
+                            <li>
+                                <span>
+                                    FrontEnd:
+                                </span>
+                                <br>
+                                HTML
+                                <br>
+                                CSS
+                                <br>
+                                Angular
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="knowledges">
+                        <ul>
+                          <li><span><strong>Knowledge Acquisition:</strong></span></li>
+                            <li>
+                                One Day International Webinar On Business
+                                Intelligence: Strategies & Overview
+                            </li>
+                            <br>
+                            <li>
+                                National Level E-Quiz on “Emerging Trends in
+                                Network Security
+                            </li>
+                            <br>
+                            <li>
+                                National Science Week Lecture Participation
+                            </li>
+                            <br>
+                            Personality Development & Employability
+                            Skills Training (“BE EMPLOYABLE”)
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="academic">
+                        <ul>
+                            <li><span><strong>Academic Excellence:</strong></span></li>
+                            <li>
+                                Served as "Certificate Designing Committee Head" in
+                                Master of Computer Applications Association
+                                (MCAA) for one year
+                            </li>
+                            <br>
+                            <li>
+                                Served as "Executive Committee Member" in
+                                Bachelor of Computer Applications Association
+                                (BCAA) for two years
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li><span><strong>Co-Curricular Activities:</strong></span></li>
+                            <li>
+                                One day Workshop on ADVANCED JAVA PROGRAMMING
+                                conducted by Marcello Tech, November 2023
+                            </li>
+                            <br>
+                            <li>
+                                One week Internship Programme in "The Complete FrontEnd Developer's
+                                Toolkit: HTML, CSS, JS, and React
+                                conducted by Marcello Tech, November 2023
+                            </li>
+                            <br>
+                            <li>
+                                One Day Workshop On “NSS – SKILL DEVELOPMENT
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Certifications  -->
+
+        <div id="certifications">
+            <div class="container">
+                <h1 class="sub-title">Certifications</h1>
+                <div class="certificate-list">
+                    <div>
+                        <i class="fab fa-python"></i>
+                        <h2>NPTEL Online Certification in Python for DataScience </h2>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>NPTEL Online Certification in Programming in Java </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+
+        <div id="project">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div class="proj">
+                        <img src="img/amb1.jpg">
+                        <div class="layer">
+                            <h3>EMERGENCY AMBULANCE SERVICE</h3>
+                            <p>
+                                This application provides
+                                the simple interface for the maintenance of hospital records and also helps user to get
+                                detailed
+                                information about the nearest hospital.
+                                <br>
+                                Emergency Ambulance system is the
+                                essential to offering a service to those with unanticipated, urgent, and
+                                life-threatening
+                                medical
+                                needs.
+                                <br>
+                                Emergency Ambulance system provides capabilities for entering hospital details,
+                                ambulance details, user details and other hospital related information.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj">
+                        <img src="img/emp1.png">
+                        <div class="layer">
+                            <h3>EMPLOYEE LEAVE MANAGEMENT SYSTEM</h3>
+                            <p>
+                                Employee Leave Management System is a distributed application, developed to maintain the
+                                details of employees working in any organization. It maintains the information about the
+                                personal
+                                details of their employees, also the details about the leave status.
+                                <br>
+                                Employee Leave Management System combine number of
+                                processes and systems to automate and easily manage
+                                employee data, leave request and grant leave.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            madhavpanja001@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            +91 9361570315
+                        </p>
+                        <div class="social-icons">
+                            <a href="http://www.linkedin.com/in/madhavan-p-b1a207192">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <a href="img/Madhavan_Resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © portfolio. Made with <i class="fa-regular fa-heart"></i> by Madhav_Loki </p>
+
+            </div>
+        </div>
+
+
+        <!-- Script -->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyUVelrrNUoVvbxJ-XpHh8BODepW9p3hnB5nz6IT1ncWnUinMFbF8MxSy5IsJvjGUo9/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message Sent Successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+</body>
+
+</html>
